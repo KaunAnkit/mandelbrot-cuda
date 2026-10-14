@@ -51,12 +51,12 @@ __global__ void mandelbrot(int* output, int width, int height,
 int main() {
     int width = 800;
     int height = 600;
-    int max_iter = 100;
+    int max_iter = 500;
 
-    float x_min = -2.5f;
-    float x_max = 1.0f;
-    float y_min = -1.25f;
-    float y_max = 1.25f;
+    float x_min = -0.45f;
+    float x_max = -0.15f;
+    float y_min =  0.4875f;
+    float y_max =  0.7125f;
 
     int total_pixels = width * height;
     size_t bytes = total_pixels * sizeof(int);
